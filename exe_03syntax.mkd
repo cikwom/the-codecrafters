@@ -1,0 +1,98 @@
+###  **Syntax in Go**
+#### **introduction*
+In go there is a particular way to write a code and anything other than that leadss to syntax error,more of an algorithm used to write a programe
+
+#### *A Go file consists of the following parts:*
+
+- Package declaration
+- Import packages
+- Functions
+- Statements and expressions
+
+Look at the following code, to understand it better:
+Example
+```go
+package main
+import ("fmt")
+
+func main() {
+  fmt.Println("Hello Xris!")
+}
+```
+
+#### *Example explained*
+
+Line 1: In Go, every program is part of a package. We define this using the package keyword. In this example, the program belongs to the main package.
+
+Line 2: import ("fmt") lets us import files  in the fmt package.
+
+Line 3: A blank line. Go ignores white space. Having white spaces in code makes it more readable.
+
+Line 4: func main() {} is a function. Any code inside its curly brackets {} will be executed.
+
+Line 5: fmt.Println() is a function made available from the fmt package. It is used to output/print text. In our example it will output "Hello World!".
+
+
+In Go, any executable code belongs to the main package.
+Go Statements
+
+fmt.Println 
+```go 
+("Hello World!")
+```
+ is a statement.
+
+In Go, statements are separated by ending a line (hitting the Enter key) or by a semicolon ";".
+
+Hitting the Enter key adds ";" to the end of the line implicitly (does not show up in the source code).
+
+The left curly bracket { cannot come at the start of a line.
+
+Run the following code and see what happens:
+Example
+```go
+package main
+import ("fmt")
+
+func main()
+{
+  fmt.Println("Hello Xris!")
+}
+```
+
+You can write more compact code, like shown below (this is not recommended because it makes the code more difficult to read),and it do not look clean
+#### **Example*
+```go
+package main; import ("fmt"); func main() { fmt.Println("Hello World!");}
+```
+Go Exercises
+Test Yourself With Exercises
+
+Exercise:
+
+Insert the missing part of the code below to output "Hello World".
+```go
+package main   
+import ("fmt")
+
+func main() {  
+  ("Hello World!")
+}
+```
+#### **correct response*
+```go
+package main   
+import ("fmt")
+
+func main() {  
+  fmt.Println("Hello World!")
+}
+```
+#### conclusion
+In summary, I should be able to distinguish between different programming languages.
+I need to recognize their unique structures and features.
+This helps me understand how each language works.
+I should also avoid mixing up their syntax rules.
+Overall, this improves clarity and reduces errors when working with code.
+
+
